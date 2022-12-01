@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1140" height="70" viewBox="0 0 1140 70">
+  <defs>
+    <filter id="Rectangle_204" x="0" y="0" width="1140" height="70" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.031"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Get_25_OFF_at_the_Fixxo_Selection_-_Shop_Now_" data-name="Get 25% OFF at the Fixxo Selection - Shop Now!" transform="translate(-390 -116)">
+    <g transform="matrix(1, 0, 0, 1, 390, 116)" filter="url(#Rectangle_204)">
+      <rect id="Rectangle_204-2" data-name="Rectangle 204" width="1110" height="40" transform="translate(15 14)" fill="#fff"/>
+    </g>
+    <text id="Get_25_OFF_at_the_Fixxo_Selection_-_Shop_Now_2" data-name="Get 25% OFF at the Fixxo Selection - Shop Now!" transform="translate(774 155)" fill="#ff7373" font-size="16" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">Get 25% OFF at the Fixxo Selection - Shop Now!</tspan></text>
+  </g>
+</svg>

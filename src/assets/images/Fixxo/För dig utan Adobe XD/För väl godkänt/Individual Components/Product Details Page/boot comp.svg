@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="215.712" height="23" viewBox="0 0 215.712 23">
+  <g id="boot_comp" data-name="boot comp" transform="translate(-405 -194)">
+    <text id="Home" transform="translate(425.712 211)" fill="#23262a" font-size="16" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">Home</tspan></text>
+    <text id="Product_Signal_" data-name="Product Signal " transform="translate(498.712 211)" fill="#23262a" font-size="16" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">Product Signal </tspan></text>
+    <path id="arrow-ios-forward-fill" d="M6.667,12.667a.667.667,0,0,1-.514-1.093L9.14,8,6.26,4.42a.681.681,0,1,1,1.073-.84l3.22,4a.667.667,0,0,1,0,.847l-3.333,4a.667.667,0,0,1-.553.24Z" transform="translate(477.713 197.686)"/>
+    <path id="Icon_metro-home" data-name="Icon metro-home" d="M16.71,9.858,9,3.871,1.285,9.858V7.417L9,1.431,16.71,7.417ZM14.782,9.64v5.784H10.926V11.568H7.069v3.856H3.213V9.64L9,5.3Z" transform="translate(403.715 197.569)"/>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-extralight-gray;
+     
+    
+    .social-media {
+         margin-bottom: 25px;
+    
+            a  {
+            color: $color-dark;
+            text-decoration: none;
+            margin-left: 10px;
+            margin-right: 10px;
+            transition: all 0.1s ease-in-out;
+
+            &:hover {
+            color: $color-theme;
+            text-decoration: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.showcase {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-extralight-gray;
+}
+
+.showcase .img-left {
+    margin-left: 20px;
+}
+.showcase .img-right {
+    margin-right: 20px;
+}
+.showcase .showcase-body {
+    text-align: center;
+    width: 30%;
+}
+.showcase .showcase-body h1 {
+    font-size: 65px;
+    font-weight: 800;
+
+}
+.showcase .showcase-body p {
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="406" viewBox="0 0 1680 406">
+  <g id="Our_Speciality" data-name="Our Speciality" transform="translate(-120 -2875)">
+    <g id="bg">
+      <rect id="bg-2" data-name="bg" width="1680" height="406" transform="translate(120 2875)" fill="#f5f5f5"/>
+    </g>
+    <g id="text">
+      <text id="Our_Speciality-2" data-name="Our Speciality" transform="translate(888 2954)" fill="#222529" font-size="20" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="0" y="0">Our Speciality</tspan></text>
+    </g>
+    <g id="Track_Your_Order" data-name="Track Your Order">
+      <g id="bg-3" data-name="bg">
+        <rect id="Rectangle_101" data-name="Rectangle 101" width="490" height="232" transform="translate(190 2984)" fill="#fff"/>
+      </g>
+      <g id="img">
+        <rect id="bg-4" data-name="bg" width="245" height="232" transform="translate(435 2984)" fill="#bbb"/>
+      </g>
+      <g id="text-2" data-name="text">
+        <text id="Track_Your_Order-2" data-name="Track Your Order" transform="translate(223 3081)" fill="#222529" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">Track Your Order</tspan></text>
+      </g>
+      <g id="btn">
+        <text id="Get_Started" data-name="Get Started" transform="translate(223 3122.5)" fill="#23262a" font-size="16" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">Get Started</tspan></text>
+        <path id="Icon_ionic-ios-arrow-forward" data-name="Icon ionic-ios-arrow-forward" d="M10.339,9,5.871,4.535a.84.84,0,0,1,0-1.192.851.851,0,0,1,1.2,0L12.129,8.4a.842.842,0,0,1,.025,1.164L7.07,14.66a.844.844,0,0,1-1.2-1.192Z" transform="translate(319.377 3108.402)"/>
+        <line id="Line_1" data-name="Line 1" x2="108" transform="translate(223.5 3128)" fill="none" stroke="#222529" stroke-width="1"/>
+      </g>
+    </g>
+    <g id="Request_a_Price" data-name="Request a Price">
+      <g id="bg-5" data-name="bg">
+        <rect id="Rectangle_181" data-name="Rectangle 181" width="490" height="232" transform="translate(1240 2984)" fill="#fff"/>
+      </g>
+      <g id="img-2" data-name="img">
+        <rect id="bg-6" data-name="bg" width="245" height="232" transform="translate(1485 2984)" fill="#bbb"/>
+      </g>
+      <g id="text-3" data-name="text">
+        <text id="Request_a_Price_Adjustment" data-name="Request a Price
+Adjustment" transform="translate(1273 3068)" fill="#222529" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">Request a Price</tspan><tspan x="0" y="30">Adjustment</tspan></text>
+      </g>
+      <g id="btn-2" data-name="btn">
+        <text id="Get_Started-2" data-name="Get Started" transform="translate(1273 3139.5)" fill="#23262a" font-size="16" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">Get Started</tspan></text>
+        <path id="Icon_ionic-ios-arrow-forward-2" data-name="Icon ionic-ios-arrow-forward" d="M10.339,9,5.871,4.535a.84.84,0,0,1,0-1.192.851.851,0,0,1,1.2,0L12.129,8.4a.842.842,0,0,1,.025,1.164L7.07,14.66a.844.844,0,0,1-1.2-1.192Z" transform="translate(1369.377 3125.402)"/>
+        <line id="Line_3" data-name="Line 3" x2="108" transform="translate(1273.5 3145)" fill="none" stroke="#222529" stroke-width="1"/>
+      </g>
+    </g>
+    <g id="Make_a_Return" data-name="Make a Return">
+      <g id="bg-7" data-name="bg">
+        <rect id="Rectangle_186" data-name="Rectangle 186" width="490" height="232" transform="translate(715 2984)" fill="#fff"/>
+      </g>
+      <g id="img-3" data-name="img">
+        <rect id="bg-8" data-name="bg" width="245" height="232" transform="translate(960 2984)" fill="#bbb"/>
+      </g>
+      <g id="text-4" data-name="text">
+        <text id="Make_a_Return-2" data-name="Make a Return" transform="translate(748 3081)" fill="#222529" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">Make a Return</tspan></text>
+      </g>
+      <g id="btn-3" data-name="btn">
+        <text id="Get_Started-3" data-name="Get Started" transform="translate(748 3122.5)" fill="#23262a" font-size="16" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">Get Started</tspan></text>
+        <path id="Icon_ionic-ios-arrow-forward-3" data-name="Icon ionic-ios-arrow-forward" d="M10.339,9,5.871,4.535a.84.84,0,0,1,0-1.192.851.851,0,0,1,1.2,0L12.129,8.4a.842.842,0,0,1,.025,1.164L7.07,14.66a.844.844,0,0,1-1.2-1.192Z" transform="translate(844.377 3108.402)"/>
+        <line id="Line_4" data-name="Line 4" x2="108" transform="translate(748.5 3128)" fill="none" stroke="#222529" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>
