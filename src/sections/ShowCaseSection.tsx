@@ -5,7 +5,7 @@ import img2 from '../assets/images/img-2.svg';
 
 const ShowCaseSection: React.FC = () => {
     return (
-      <section className='showcase'>
+      <section className="showcase">
         
         <img src={img1} className="img-left" alt="img1" />
         <div className="showcase-body">

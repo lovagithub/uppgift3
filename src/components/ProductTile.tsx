@@ -1,6 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { ProductItem } from '../models/ProductModels'
+//import { useShoppingCart } from '../contexts/ShoppingCartContext'
+//import {currencyFormatter } from '../utilities/currnecyFormatter'
 
 interface ProductTileType {
   item: ProductItem

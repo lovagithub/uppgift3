@@ -1,8 +1,13 @@
 import React from 'react'
 import ProductTile from '../components/ProductTile'
+import { ProductItem } from '../models/ProductModels'
 
+interface ProductTilesType {
+    title: string
+    items: ProductItem[]
+}
 
-const ProductTiles= ({title, items = []}) => {
+const ProductTiles: React.FC<ProductTilesType> = ({title, items = []}) => {
    
     console.log("ProductTiles runnig")
     return ( 

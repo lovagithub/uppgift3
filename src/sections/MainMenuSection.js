@@ -1,13 +1,24 @@
-import React from 'react'
+import React, { useState} from 'react'
 import { NavLink } from 'react-router-dom'
+//import { useShoppingCart } from '../contexts/ShoppingCartContext'
 import MenuIcon from '../components/MenuIcon'
 
+
 const MainMenuSection = () => {
+    const [showMenu, setShowMenu] = useState(false)
+//   const { cartQuantity } =useShoppingCart()
+
+    const toggleMenu = () => {
+        setShowMenu(!showMenu)
+    }
+
+
+
     return (
         <nav className="mainmenu container">     
                 <NavLink className="logo" to ="/" end>Fixxo.</NavLink>
 
-                <div className="menu-links">  
+                <div className={`menu-links ${ showMenu ? "d-grid": ""}`}>   
                 <NavLink className="menu-link" to="/" end>Home</NavLink> 
                 <NavLink className="menu-link" to="/categories" end>Categories</NavLink>   
                 <NavLink className="menu-link" to="/products" end>Products</NavLink>   
