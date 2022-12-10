@@ -1,8 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { ProductItem } from '../models/ProductModels'
-//import { useShoppingCart } from '../contexts/ShoppingCartContext'
-//import {currencyFormatter } from '../utilities/currnecyFormatter'
+import { useShoppingCart } from '../contexts/ShoppingCartContext'
+import { currencyFormatter } from '../utilities/currencyFormatter'
 
 interface ProductTileType {
   item: ProductItem
@@ -10,7 +10,7 @@ interface ProductTileType {
 }
 
 const  ProductTile: React.FC<ProductTileType> = ({item}) => {
-  const { incrementQuantity } = useShopingCart()
+  const { incrementQuantity } = useShoppingCart()
 
     return (
    <div className="col">

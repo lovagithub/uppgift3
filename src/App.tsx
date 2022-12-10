@@ -1,6 +1,7 @@
 
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import ContactsView from './views/ContactsView';
 import HomeView from './views/HomeView';
 import NotFoundView from './views/NotFoundView';
@@ -11,12 +12,16 @@ import ProdactsView from './views/ProdactsView';
 import ProductDetailsView from './views/ProductDetailsView';
 import CategoriesView from './views/CategoriesView';
 import ComparesView from './views/CompareView';
+import ProductProvider from './contexts/ProductContext';
+import { ShoppingCartProvider} from './contexts/ShoppingCartContect'
 
 function App() {
  
   return (
 
       <BrowserRouter>
+      <ShoppingCartProvider>
+      <ProductProvider>
 
       <Routes>
         <Route path="/" element={<HomeView />} />
@@ -31,6 +36,8 @@ function App() {
         <Route path="*" element={<NotFoundView />} />
   
       </Routes>
+      </ProductProvider>
+      </ShoppingCartProvider>
       </BrowserRouter>
   );
   
