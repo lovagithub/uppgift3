@@ -1,8 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { ProductItem } from '../models/ProductModels'
-import { useShoppingCart } from '../contexts/ShoppingCartContext'
+import { ShoppingCartContextType, useShoppingCartContext } from '../contexts/ShoppingCartContext'
 import { currencyFormatter } from '../utilities/currencyFormatter'
+import { ShorthandPropertyAssignment } from 'typescript'
 
 interface ProductTileType {
   item: ProductItem
@@ -10,7 +11,7 @@ interface ProductTileType {
 }
 
 const  ProductTile: React.FC<ProductTileType> = ({item}) => {
-  const { incrementQuantity } = useShoppingCart()
+  const { increment } = useShoppingCartContext() as ShoppingCartContextType
 
     return (
    <div className="col">
@@ -20,7 +21,7 @@ const  ProductTile: React.FC<ProductTileType> = ({item}) => {
      <div className="card-menu d-xl-none">
          <button className="menu-link"><i className="fa-solid fa-heart"></i></button >
          <button className="menu-link"><i className="fa-solid fa-code-compare"></i></button >
-         <button onClick={() => incrementQuantity({articleNumber: item.articleNumber, product: item})} className="menu-link"><i className="fa-solid fa-bag-shopping"></i></button >
+         <button onClick={() => increment({articleNumber: item.articleNumber, product: item, quantity: 1})} className="menu-link"><i className="fa-solid fa-bag-shopping"></i></button >
      </div>
      <NavLink to={` /products/${item.articleNumber}`} className="btn-theme btn-card-theme d-xl-none">
          <span className="corner-left"></span>            
@@ -46,7 +47,5 @@ const  ProductTile: React.FC<ProductTileType> = ({item}) => {
  )
 }
 export default ProductTile
-function useShopingCart(): { incrementQuantity: any } {
-  throw new Error('Function not implemented.')
-}
+
 

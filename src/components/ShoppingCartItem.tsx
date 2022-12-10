@@ -1,9 +1,15 @@
 import React from 'react'
-import { useShoppingCart } from '../contexts/ShoppingCartContext'
-import {currencyFormatter } from '../utilities/currnecyFormatter'
+import { ShoppingCartContextType, useShoppingCartContext } from '../contexts/ShoppingCartContext'
+import { CartItem } from '../models/ShoppingCartModels'
+import { currencyFormatter } from '../utilities/currencyFormatter'
 
-const  ShoppingCarItemt = () => {
-const { incrementQuantity, decrementQuantity, removeItem } = useShoppingCart()
+interface ShoppingCartItemType {
+    item: CartItem
+}
+
+
+const  ShoppingCarItemt: React.FC<ShoppingCartItemType> = ({item}) => {
+const { increment, decrement, remove } = useShoppingCartContext() as ShoppingCartContextType
 
     return (
         <div className="shoppingcart-item">
@@ -14,15 +20,15 @@ const { incrementQuantity, decrementQuantity, removeItem } = useShoppingCart()
                 <div className="item-info-name">{item.product.name}</div>
                     <div className="item-info-quantity">
                         <div className="item-info-quantity-box">
-                        <button className="box-button-left" onClick={() => decrementQuantity(item)}>-</button>
+                        <button className="box-button-left" onClick={() => decrement(item)}>-</button>
                         <span>{item.quantity}</span>
-                        <button className="box-button-right" onClick={() => incrementQuantity(item)}>-</button>
+                        <button className="box-button-right" onClick={() => increment(item)}>-</button>
                     </div>
                 </div>
             </div>
         <div className="item-price">
-        <div>{currnecyFormatter(item.product.price * item.quantity)}</div>
-        <button onAuxClick={() => removeItem(item.articleNumber)}><i className="fa-solid fa-trash"></i></button>
+        <div>{currencyFormatter(item.product.price * item.quantity)}</div>
+        <button onClick={() => remove(item.articleNumber)}><i className="fa-solid fa-trash"></i></button>
         </div>
     </div>
           
