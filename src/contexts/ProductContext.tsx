@@ -47,7 +47,7 @@ const ProductProvider: React.FC<ProductProviderType> = ({children}) => {
         let url = baseUrl + `?tag=featured`
 
         if (take !== 0)
-        url = baseUrl + `&?take=${take}`
+        url = baseUrl + `?take=${take}`
 
         const res = await fetch(url)
         setFeatured(await res.json())

@@ -9,7 +9,6 @@ interface ProductTilesType {
 
 const ProductTiles: React.FC<ProductTilesType> = ({title, items = []}) => {
    
-    console.log("ProductTiles runnig")
     return ( 
         
         <section className="product-grid">
