@@ -17,7 +17,6 @@ const productsController = require('./controllers/productsController')
 app.use('/api/products', productsController)
 
 const usersController = require('./controllers/usersController')
-const products = require('./data/database')
 app.use('/api/users', usersController)
 
 // start web api
