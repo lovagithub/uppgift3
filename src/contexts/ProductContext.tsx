@@ -13,7 +13,7 @@ export interface ProductContextType {
         products: ProductItem[]
         featured: ProductItem[]
         get: (articleNumber?: string) => void
-        getAll: (take?: number) => void
+        getAll: () => void
         getFeatured: (take?: number) => void
       
 }
@@ -22,42 +22,35 @@ export const useProductContext = () => { return useContext(ProductContext)}
 
 const ProductProvider: React.FC<ProductProviderType> = ({children}) => {
     const baseUrl:string = 'http://localhost:5000/api/products'
-    const EMPTY_PRODUCT: ProductItem = { articleNumber: '',name: '', category: '', price: 0, imageName: ''}
-    const [product, setProduct] = useState<ProductItem>(EMPTY_PRODUCT)
+    const EMPtY_PRODUCT: ProductItem = { articleNumber: '',name: '', category: '', price: 0, imageName: ''}
+    const [product, setProduct] = useState<ProductItem>(EMPtY_PRODUCT)
     const [products, setProducts] = useState<ProductItem[]>([]) 
     const [featured, setFeatured] = useState<ProductItem[]>([])
     
     
     const get = async (articleNumber?: string) => {
         if (articleNumber !== undefined) {
-        const res = await fetch(baseUrl + `/${articleNumber}`)
+        const res = await fetch(`${baseUrl}/details/${articleNumber}`)
         setProduct(await res.json())
         }
     }
-    const getAll = async (take: number  = 0) => {
-        let url = baseUrl
-
-        if (take !== 0)
-        url = baseUrl + `?take=${take}`
-
-        const res = await fetch(url)
+    const getAll = async () => {
+        const res = await fetch(baseUrl)
         setProducts(await res.json())
     } 
     
-    
-    const getFeatured = async (take: number  = 0) => {
-        let url = baseUrl + `?tag=featured`
+        const getFeatured = async (take: number  = 0) => {
+        let url = `${baseUrl}/featured`
 
         if (take !== 0)
-        url = baseUrl + `?take=${take}`
+        url += `/${take}`
 
         const res = await fetch(url)
         setFeatured(await res.json())
     }
   
   
-   
-return <ProductContext.Provider value={{product, products, featured, get, getAll, getFeatured}}>
+    return <ProductContext.Provider value={{product, products, featured, get, getAll, getFeatured}}>
     {children}
     </ProductContext.Provider>
 }
