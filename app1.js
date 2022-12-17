@@ -15,10 +15,11 @@ app.use(bodyParser.json())
 
 // routes/controllers
 
-app.use('/api/products', require('./controllers/productsController'))
+const productsController = require('./controllers/productsController')
+app.use('/api/products', productsController)
 
-
-app.use('/api/users', require('./controllers/usersController'))
+const usersController = require('./controllers/usersController')
+app.use('/api/users', usersController)
 
 // start web api
 initMongoDB()
